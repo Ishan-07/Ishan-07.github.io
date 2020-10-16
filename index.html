@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Gandhi</title>
+    <link rel="icon" href="favicon.jpg" type="image/gif">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="indexstyle.css">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+      * {box-sizing: border-box;}
+      body {font-family: Verdana, sans-serif;}
+      .mySlides {display: none;}
+      img {vertical-align: middle;}
+
+
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active {
+        background-color: #717171;
+      }
+
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 7s;
+        animation-name: fade;
+        animation-duration: 7s;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+      }
+      </style>
+</head>
+
+  <body>
+
+
+
+
+    <header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="vid.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-3">Gandhi Jayanti</h1>
+        <p class="lead mb-0">151th Birth Aniversary of Mahatma Gandhi</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <p>Mahatma Gandhi, an apostle of non-violence and preacher of truth, was born on October 2nd, 1869 in Gujarat. He belonged to a well-to-do family. Throughout his school days, he remained a shy boy but was a good and regular student. He later went to England to study law and became a barrister. Then he returned to India and began to practice at the Bombay High Court. But he was not very interested in the legal profession. So, he joined the struggle for India’s Independence.</p>
+        <p>Mahatma Gandhi is remembered in the whole world for their ethicalness. The 4 major weapons of mahatma is “Non-violence[Ahimsa], truth[Satya], love and fraternity “. India has got freedom by gandhi’s these virtues.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="new5">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img3.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 7000); 
+}
+</script>
+<style type="text/css">.new5 {
+  border: 3px solid blue;
+  border-radius: 5px;
+}</style>
+<hr class="new5">
+  <section class="text-gray-700 body-font" >
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <video width="850" height="50" controls>
+        <source src="home.mp4" type="video/mp4">
+      </video>
+  <hr class="new5">
+  <hr>    
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">GANDHI JAYANTI 2020</h1>
+            <p class="mb-8 leading-relaxed" class="border-gray-400">This year Mahatma Gandhi's 151th Birthday was celebrated. I believe that "Gandhi’s views were the most enlightened of all the political men in that time. We should strive to do things in his spirit: not to use violence in fighting for our cause, but by non-participation in anything you believe is evil</p><hr class="new5"><br>
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">GANDHI in 2020</h1>
+            <p>In 2020, more than usual, it is vital to cultivate freedom from resentment. This is what made Mahatma Gandhi’s nonviolence possible.
+          We now live in a time when a wide variety of political mobilisations are driven by the need to allay historical wrongs and related hurt. Consequently, much of the conflict between competing groups tends to be mired in minute historical detail. For instance, those who have learnt to denigrate Gandhi emphasise specific “wrong” actions in his prolific political life — <span id="dots">...</span><span id="more">not his fundamental insights. This is as true for those who denounce Gandhi for being anti-Hindu as those who are convinced that he was a racist.
+          For all such critics, it may be worthwhile to revisit Gandhi’s famous life-defining moment on that train journey in 1893 from Durban to Pretoria. Gandhi was forcibly evicted from the first-class compartment because he was a “coloured” man. The bitter cold night that Gandhi spent on a lonely railway station in a strange country could have become a life-long trauma. As he shivered through the night in the station’s waiting room, Gandhi did consider running back home to Rajkot. But eventually, he began to think of his duty. The real culprit, Gandhi realised, was not that particular man who had him thrown off the train. That man’s behaviour was merely “a symptom of the deep disease of colour prejudice”. Therefore, resentment towards his offender was a waste of time and energy. By contrast, trying “…if possible, to root out the disease and suffer hardships in the process” seemed truly worthwhile. Gandhi, later, described the incident at the railway station as a “creative experience” that changed the course of his life. He said: “My active nonviolence began from that date.” This sequence of action and reaction illustrates powerful and universal truths.
+
+          As individuals and as members of an identity group most people have some experience of hurt, humiliation or unfairness. This common experience leads to a fork in the journey of life. Does a person, or group, choose the path of resentment or of creative resistance?
+          It is commonly argued that resentment must be nurtured, as a form of energy for righting old wrongs. The opposite of this, it is fearfully assumed, must be apathy or indifference. Gandhi’s life has epochal implications precisely because he showed this to be a false assumption — morally and empirically.
+          Resentment latches onto, and indefinitely expands, the experience of hurt. A life, or indeed a politics, based on resentment must keep finding new reasons to feel belittled. Even when it is dressed up in revolutionary fervour, resentment remains rooted in memories of powerlessness. This is why it feeds a desire for vengeance, for settling scores.
+          By contrast, creative resistance of the Gandhi kind arises from the ability to de-personalise the hurt and insult. This releases creative energies which are exponentially empowering and enable renewal. It is only on this track that one can seek to right old wrongs through restorative justice — a process which heals the wounds of both victims and perpetrators.
+          Acknowledging this truth is relatively easy. The difficulty lies in accepting that it applies to all of us regardless of our political preferences. This is what makes Gandhi Jayanti in 2020 particularly poignant.
+          This is the year when the Ram Janmabhoomi movement was officially granted its moment of triumph. This movement was based on Hindu resentment about destruction of temples in the past. Its far-reaching success lies in persuading enough Hindus to ignore the violence and politics of vengeance, which led up to the construction of a new temple. Freedom from resentment could be the counter-magnet that persuades them otherwise, attracts them to a different space.
+          However, the onus for this lies with all of us who opposed the Ayodhya movement. Just now it is advocates of “sarva dharma sambhav”, equal respect for all faiths, who are experiencing a “thrown-off-the-train” moment. We can respond with resentment and deepen the cycle of conflict. Or we can demonstrate creative resistance, which both acknowledges and transcends past hurts.
+          How is this to be done? There are as many answers to this question as there are individuals engaged in exploring it. We could, each one of us, experiment in the very next argument in the family on these issues. Regardless of the specific issue or dispute — freedom from resentment promises to be a winner and leveller.
+</span></p>
+<style type="text/css">
+  span{
+    display: none;
+
+  }
+  #myBtn:hover {
+       border-radius: 2px;
+  background-color: #0900F8;
+  border: none;
+  color: #0585D8;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 130px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 3px;
+  }
+  #myBtn span:after {
+  content: '\00bb';
+  left: 80%;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+</style>
+<button onclick="playAudio();myFunction()"  id="myBtn" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="button">Read more</button><br><hr>
+
+
+<audio class="center" id="myAudio" controls>
+  <source src="home.mp3" type="audio/mpeg">
+</audio>
+<script type="text/javascript">
+  var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+}  
+
+</script>
+<style type="text/css">
+  .center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+</style>
+<script type="text/javascript">
+  
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<hr class="new5">
+
+      </div>
+    </div>
+  </section>
+    <section class="text-gray-700 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">Gandhi on</h2>
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Science and Technology</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">That atomic energy though harnessed by American scientists and army men for destructive purposes may be utilised by other scientists for humanitarian purposes is undoubtedly within the realm of possibility. … An incendiary uses fire for his destructive and nefarious purpose, a housewife makes daily use of it in preparing nourishing food for mankind.<br>
+                                          — Mahatma Gandhi</p><hr>
+        </div>
+        <section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="machine1.jpg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Mahatma and Machines</h2>
+        <p class="leading-relaxed text-base">Father of our nation, Mohandas Karamchand Gandhi is known for many things. From his thoughts on caste, creed and religion to his teachings of ahimsa and communal harmony, the Mahatma was a man who crafted the ...</p>
+      <a href="machine.html"><button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded" id="myBtn">Read</button></a>
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="science.jpg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Towards An Understanding Of Gandhi's Views On Science</h2>
+        <p class="leading-relaxed text-base">Gandhi, it is argued in this paper, was not anti-science as is commonly misunderstood. Through a look at his various experiments, many unrealized in his time, it is shown that ...</p>
+        <a href="science.html"><button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded" id="myBtn" >Read</button></a>
+    </div>
+  </div>
+</section>
+        <hr class="new5">
+        <style type="text/css">
+              #myBtn1:hover {
+              border-radius: 2px;
+              background-color: #0900F8;
+              border: none;
+              color: #0585D8;
+              text-align: center;
+              font-size: 22px;
+              padding: 10px;
+              width: 85px;
+              transition: all 0.3s;
+              cursor: pointer;
+              margin: 3px;
+              }
+      </style>
+      <script type="text/javascript">
+mybutton = document.getElementById("myBtn1");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    <section class="text-gray-700 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Mahatma Gandhi
+        <br class="hidden lg:inline-block"> 2 October,1869-30 January, 1948
+      </h1>
+      <p class="mb-8 leading-relaxed">Mahatma Gandhi is very famous in India as “Bapu” or “Rastrapita”. The full name of him is Mohandas Karamchand Gandhi. He was a great freedom fighter who led India as a leader of the nationalism against British rule. He was born on 2nd of October in 1869 in Porbandar, Gujarat, India. He died on 30th of January in 1948. M.K. Gandhi was assassinated by the Hindu activist, Nathuram Godse, who was hanged later as a punishment by the government of India. He has been given another name by the Rabindranath Tagore as “Martyr of the Nation” since 1948.</p>
+      <div class="flex justify-center">
+
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img width="500" src="bd.jpg">
+    </div>
+  </div>
+</section>
+        <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" href=""  id="myBtn1" onclick="topFunction()">Up &#8593;</button><br>
+  <hr class="new5">
+ 
+</body>
+</html> 
